@@ -7,8 +7,74 @@ div {
   font-family: Helvetica, sans-serif;
 }
 
-/* Header section */
+  /* General Styles */
 
+.banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  }
+
+.banner.left {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+
+.banner.right {
+  width: 407px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-left: 1rem;
+  padding: 1rem 0;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+.left img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.chapter-header {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+  /* Header section */
 
 .header {
   background-color: white;
@@ -44,20 +110,20 @@ div {
   padding-right: 1.5rem;
 }
 
-.header .nav h2 {
+.header .nav p {
   padding: 0 0.5rem;
 }
 
-.header .mobile {
+.mobile {
   display: none;
 }
 
 @media only screen and (max-width: 640px) {
-  .header .desktop {
+  .desktop {
     display: none;
   }
 
-  .header .mobile {
+  .header.mobile {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -65,23 +131,95 @@ div {
 }
 
 
-
-/* Start section */
+  /* Start section */
 
 .start {
   background-color: lightgrey;
-  height: 5rem;
 }
+
+.banner.start {
+  align-items: center;
+}
+
+.right.start h1, h3 {
+    margin: 1rem 0;
+}
+
+
+.start.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+}
+
 
 /* Information section */
 
+.banner.info {
+  align-items: flex-start;
+}
+
+.banner.left h2 {
+  margin: 2rem 0;
+}
+
+.banner.left p {
+  margin-bottom: 1.5rem;
+}
+
+.banner.box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.box.image {
+  width: 35%;
+  height: 133px;
+  overflow: hidden;
+}
+
+.box.image.mobile {
+  display: none;
+}
+
+.box.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.box.text{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.box.text h3 {
+  margin: 0;
+}
+
+.box.text p {
+  padding-top: 0.5rem;
+}
 
 
 /* Courses section */
 
+.courses {
+  background-color: lightgrey;
+}
 
 
 /* Thesis section */
+
+
 
 
 
