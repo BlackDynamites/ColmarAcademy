@@ -1,10 +1,10 @@
 html {
   font-size: 16px;
+  font-family: Helvetica, sans-serif;
 }
 
 div {
-  border: black 1px solid;
-  font-family: Helvetica, sans-serif;
+
 }
 
   /* General Styles */
@@ -22,6 +22,24 @@ div {
   flex-shrink: 1;
 }
 
+.container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .banner.right {
   width: 407px;
   display: flex;
@@ -30,27 +48,6 @@ div {
   margin-left: 1rem;
   padding: 1rem 0;
 }
-
-.container {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-
-.left img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-.bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 
 
 h1 {
@@ -70,7 +67,7 @@ h3 {
 
 .chapter-header {
   text-align: center;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 
@@ -142,9 +139,8 @@ h3 {
 }
 
 .right.start h1, h3 {
-    margin: 1rem 0;
+    padding: 1rem 0;
 }
-
 
 .start.button {
   width: 100%;
@@ -159,15 +155,12 @@ h3 {
 
 /* Information section */
 
-.banner.info {
-  align-items: flex-start;
-}
 
-.banner.left h2 {
+.banner.left.info h2 {
   margin: 2rem 0;
 }
 
-.banner.left p {
+.banner.left.info p {
   margin-bottom: 1.5rem;
 }
 
@@ -176,7 +169,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 .box.image {
@@ -212,15 +205,95 @@ h3 {
 
 /* Courses section */
 
-.courses {
+.course {
   background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
+
+.courses.pattern {
+  display: flex;
+  padding: 2rem 0;
+  flex-direction: column;
+  width: 100%;
+}
+
+.courses.row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  vertical-align: baseline;
+
+}
+
+#top-row {
+  margin-bottom: 2rem;
+}
+
+.pattern.box {
+  display: inline-block;
+  width: 27%;
+  background-color: white;
+
+}
+
+.pattern.box.middle {
+  margin: 0 2rem;
+}
+
+.pattern.bottom {
+
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+
+}
+
+
+.pattern.bottom h5 {
+  margin-bottom: 1rem;
+}
+
+
 
 
 /* Thesis section */
 
+.banner.video {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
 
+.video video {
+  width: 100%;
+  height: auto;
+}
 
+.banner.left.thesis h3 {
+  margin-top: 1.5rem;
+}
 
 
 /* Footer section */
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  border-top: 1px darkgrey solid;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  height: 4.25rem;
+}
+
+footer p,
+.terms {
+  margin: 1rem 1.5rem;
+}
+
+footer a {
+  padding: 0.5rem;
+  color: black;
+  text-decoration: none;
+}
