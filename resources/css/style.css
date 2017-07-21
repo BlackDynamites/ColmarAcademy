@@ -138,7 +138,8 @@ h3 {
   align-items: center;
 }
 
-.right.start h1, h3 {
+.right.start h1,
+.right.start h3 {
     padding: 1rem 0;
 }
 
@@ -244,15 +245,13 @@ h3 {
 }
 
 .pattern.bottom {
-
+  margin: 1.5rem 1rem;
   margin-left: 1rem;
   margin-bottom: 1.5rem;
-
 }
 
-
 .pattern.bottom h5 {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 
