@@ -25,7 +25,7 @@ html {
   overflow: hidden;
 }
 
-.container img {
+img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -50,6 +50,7 @@ html {
 h1 {
   font-weight: bold;
   font-size: 3.5rem;
+  letter-spacing: 0.15rem;
 }
 
 h2 {
@@ -83,6 +84,7 @@ a {
 .chapter-header {
   text-align: center;
   padding-top: 2rem;
+  letter-spacing: 0.15rem;
 }
 
 
@@ -220,13 +222,7 @@ font-family: 'Quattrocento', serif;
   display: none;
 }
 
-.box.image img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.box.text{
+.box.text {
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -262,7 +258,6 @@ font-family: 'Quattrocento', serif;
 
 .course .chapter-header {
   color: #FFF;
-  letter-spacing: 0.15rem;
 }
 
 .courses.pattern {
@@ -346,13 +341,13 @@ footer {
 }
 
 footer p,
+footer a,
 .terms {
-  margin: 1rem 1.5rem;
+  margin: 1rem 1rem;
 }
 
-footer a {
-  padding: 0.5rem;
-  font-family: 'Quattrocento', serif;
+footer a:hover {
+  text-decoration: underline;
 }
 
 
@@ -366,7 +361,7 @@ footer a {
     justify-content: center;
   }
 
-  .banner.left.start {
+    .banner.left.start {
     height: 50%;
     width: auto;
     padding: 0;
@@ -375,9 +370,9 @@ footer a {
   }
 
   .banner.right.start {
-    width: 70%;
+    width: 80%;
     flex-shrink: 1;
-    align-items: flex-start;
+    align-items: center;
     padding: 0;
     margin: 0;
   }
@@ -426,12 +421,6 @@ footer a {
     margin: 1rem;
   }
 
-  .box.image.mobile img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
   .box.text {
     align-items: center;
     margin-left: 1rem;
@@ -444,6 +433,10 @@ footer a {
 }
 
 @media only screen and (max-width: 640px)  {
+  .full {
+    border: none;
+  }
+
   /* Header section */
   .header.desktop {
     display: none;
@@ -457,7 +450,7 @@ footer a {
 
   /* Courses section */
   .course {
-    background-color: white;
+    background-color: #FFF;
     border-top: lightgrey 1px solid;
     border-bottom: lightgrey 1px solid;
   }
@@ -505,6 +498,7 @@ footer a {
 
   .banner.right.start {
     width: 90%;
+    align-items: flex-start;
   }
 }
 
