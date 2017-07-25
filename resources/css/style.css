@@ -1,11 +1,6 @@
 html {
   font-size: 16px;
-  font-family: Helvetica, sans-serif;
-
-}
-
-div {
-
+  font-family: 'Oswald', sans-serif;
 }
 
   /* General Styles */
@@ -54,7 +49,7 @@ div {
 
 h1 {
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h2 {
@@ -67,8 +62,22 @@ h3 {
   font-size: 1.5rem;
 }
 
+h6 {
+  font-size: 0.8rem;
+}
+
 p {
   line-height: 1.5;
+  font-family: 'Quattrocento', serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.full {
+  border-bottom: #000 1px solid;
 }
 
 .chapter-header {
@@ -80,12 +89,13 @@ p {
   /* Header section */
 
 .header {
-  background-color: white;
+  background-color: #FFF;
   display: flex;
   text-align: center;
   height: 4rem;
   width: 100%;
   justify-content: space-between;
+  border-bottom: #000 1px solid;
 }
 
 .header .logo {
@@ -101,20 +111,30 @@ p {
 
 .header .logo span {
   display: inline-flex;
+  font-size: 1.25rem;
+}
+
+.header .logo {
+  color: #1964A3;
 }
 
 .header .logo #colmar {
   font-weight: bold;
+  color: black;
 }
 
-.header .nav {
+.header nav {
   display: flex;
   align-items: center;
   padding-right: 1.5rem;
 }
 
-.header .nav p {
+.header nav a {
   padding: 0 0.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 .mobile {
@@ -125,11 +145,17 @@ p {
   /* Start section */
 
 .start {
-  background-color: lightgrey;
+  background-color: #245B89;
+  color: #FFF;
 }
 
 .banner.start {
   align-items: center;
+  justify-content: flex-start;
+}
+
+.banner.right.start {
+  align-items: flex-start;
 }
 
 .right.start h1,
@@ -137,16 +163,25 @@ p {
     padding: 1rem 0;
 }
 
-.start.button {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  color: white;
-  background-color: black;
-  padding: 0.5rem 0;
-  margin: 1rem 0;
+.right.start h3 {
+font-family: 'Quattrocento', serif;
 }
 
+.start.button {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  background-color: #23A72C;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  transition: background-color 0.3s linear;
+  border-radius: 0.5rem;
+}
+
+.start.button:hover {
+  background-color: #12C71E;
+
+}
 
 
 /* Information section */
@@ -168,6 +203,11 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
+  transition: background-color 0.3s linear;
+}
+
+.banner.box:hover{
+  background-color: #DBE2E7;
 }
 
 .box.image {
@@ -201,19 +241,28 @@ p {
   padding-top: 0.5rem;
 }
 
-#more {
-  color: blue;
+.box.text a {
+  color: #1964A3;
+}
+
+.box.text a:hover {
+  color: #222F39;
 }
 
 
 /* Courses section */
 
 .course {
-  background-color: lightgrey;
+  background-color: #245B89;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+.course .chapter-header {
+  color: #FFF;
+  letter-spacing: 0.15rem;
 }
 
 .courses.pattern {
@@ -228,7 +277,6 @@ p {
   justify-content: center;
   width: 100%;
   vertical-align: baseline;
-
 }
 
 #top-row {
@@ -238,8 +286,12 @@ p {
 .pattern.box {
   display: inline-block;
   width: 27%;
-  background-color: white;
+  background-color: #FFF;
+  transition: background-color 0.3s linear;
+}
 
+.pattern.box:hover{
+  background-color: #DBE2E7;
 }
 
 .pattern.box.middle {
@@ -300,8 +352,7 @@ footer p,
 
 footer a {
   padding: 0.5rem;
-  color: black;
-  text-decoration: none;
+  font-family: 'Quattrocento', serif;
 }
 
 
@@ -390,11 +441,7 @@ footer a {
    .banner.left.thesis {
      padding: 2rem 0;
   }
-
 }
-
-
-
 
 @media only screen and (max-width: 640px)  {
   /* Header section */
